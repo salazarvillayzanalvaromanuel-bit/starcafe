@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cafés, cappuccinos, frappés, pasteles y empanadas de StarCafé | Cafetería. Filtra el menú y arma tu pedido por WhatsApp.">
+  <title>Productos | StarCafé | Cafetería</title>
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap bar">
+    <a class="marca" href="index.html"><img src="img/logo-header.png" alt="Logotipo de StarCafé"><span>StarCafé | Cafetería</span></a>
+    <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir menú"><label class="burger" for="menu-toggle" aria-hidden="true">☰</label>
+    <nav class="site-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a class="active" aria-current="page" href="productos.html">Productos</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contáctanos</a></nav>
+  </div></header>
+  <main>
+    <section class="page-hero"><div class="wrap"><span class="eyebrow">Algo rico para cada momento</span><h1>Nuestro menú</h1><p>Café de nuestra tierra, bebidas preparadas al momento y antojitos para acompañar. Elige tus favoritos y arma tu pedido.</p></div></section>
+    <section class="catalog-section" id="catalogo">
+      <div class="wrap">
+        <div class="catalog-tools">
+          <label class="search-label" for="product-search">Buscar en el menú</label>
+          <div class="search-row"><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Ej. cappuccino, empanada..." autocomplete="off"></div>
+          <div class="filter-row" role="group" aria-label="Filtrar productos">
+            <button class="filter-chip active" type="button" data-filter="todos" aria-pressed="true">Todo el menú</button>
+            <button class="filter-chip" type="button" data-filter="cafes" aria-pressed="false">Cafés</button>
+            <button class="filter-chip" type="button" data-filter="bebidas-heladas" aria-pressed="false">Frapés y bebidas heladas</button>
+            <button class="filter-chip" type="button" data-filter="desayunos-tipicos" aria-pressed="false">Desayunos típicos</button>
+            <button class="filter-chip" type="button" data-filter="desayunos-especiales" aria-pressed="false">Desayunos especiales</button>
+            <button class="filter-chip" type="button" data-filter="para-picar" aria-pressed="false">Especiales para picar</button>
+          </div>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+        <div class="product-grid" id="product-grid">
+          <article class="product-card" data-category="cafes" data-name="cafe americano de origen">
+            <img src="img/Caf%C3%A9%20Americano%20de%20Origen.webp" alt="Café Americano de Origen" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Café Americano de Origen</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cafe-americano-origen" data-name="Café Americano de Origen">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="cafes" data-name="cafe chacarero taza grande">
+            <img src="img/Caf%C3%A9%20Chacarero.avif" alt="Café Chacarero servido en taza grande" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Café Chacarero <span class="product-detail">(Taza Grande)</span></h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cafe-chacarero" data-name="Café Chacarero (Taza Grande)">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="cafes" data-name="prensa francesa">
+            <img src="img/Prensa%20Francesa.jpg" alt="Café preparado en prensa francesa" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Prensa Francesa</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="prensa-francesa" data-name="Prensa Francesa">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="cafes" data-name="espresso expreso">
+            <img src="img/Espresso.jpg" alt="Taza de espresso" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Espresso</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="espresso" data-name="Espresso">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="cafes" data-name="cappuccino capuchino">
+            <img src="img/Cappuccino.jpg" alt="Taza de cappuccino" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Cappuccino</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cappuccino" data-name="Cappuccino">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="cafes" data-name="cafe helado frio">
+            <img src="img/Caf%C3%A9%20Helado.jpg" alt="Café helado servido frío" loading="lazy"><div class="product-info"><span class="product-category">Cafés</span><h2>Café Helado</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cafe-helado" data-name="Café Helado">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="bebidas-heladas" data-name="frape frappe clasico cafe">
+            <img src="img/Frap%C3%A9%20Cl%C3%A1sico%20de%20Caf%C3%A9.jpg" alt="Frapé clásico de café" loading="lazy"><div class="product-info"><span class="product-category">Frapés y bebidas heladas</span><h2>Frapé Clásico de Café</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="frape-clasico-cafe" data-name="Frapé Clásico de Café">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="bebidas-heladas" data-name="frape frappe oreo galleta crema batida">
+            <img src="img/Frap%C3%A9%20de%20Oreo.jpg" alt="Frapé de Oreo con trocitos de galleta" loading="lazy"><div class="product-info"><span class="product-category">Frapés y bebidas heladas</span><h2>Frapé de Oreo</h2><p>Con trocitos de galleta y crema batida.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="frape-oreo" data-name="Frapé de Oreo">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="bebidas-heladas" data-name="frape frappe chocolate fudge cacao regional">
+            <img src="img/Frap%C3%A9%20de%20Chocolate.jpg" alt="Frapé de chocolate con fudge de cacao" loading="lazy"><div class="product-info"><span class="product-category">Frapés y bebidas heladas</span><h2>Frapé de Chocolate</h2><p>Con fudge de cacao regional.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="frape-chocolate" data-name="Frapé de Chocolate">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="bebidas-heladas" data-name="frape frappe vainilla caramelo">
+            <img src="img/Frap%C3%A9%20de%20Vainilla%20y%20Caramelo.jpg" alt="Frapé de vainilla y caramelo" loading="lazy"><div class="product-info"><span class="product-category">Frapés y bebidas heladas</span><h2>Frapé de Vainilla y Caramelo</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="frape-vainilla-caramelo" data-name="Frapé de Vainilla y Caramelo">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="bebidas-heladas" data-name="jugo del dia fruta estacion">
+            <img src="img/jugo%20del%20dia.jpg" alt="Jugo del día preparado con fruta de estación" loading="lazy"><div class="product-info"><span class="product-category">Frapés y bebidas heladas</span><h2>Jugo del Día</h2><p>Preparado con fruta de estación.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="jugo-del-dia" data-name="Jugo del Día">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-tipicos" data-name="cecina ahumada patacones platano">
+            <img src="img/CECINA%20AHUMADA%20CON%20PATACONES.png" alt="Cecina ahumada servida con patacones" loading="lazy" width="640" height="640"><div class="product-info"><span class="product-category">Desayunos típicos</span><h2>Cecina Ahumada con Patacones</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cecina-patacones" data-name="Cecina Ahumada con Patacones">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-tipicos" data-name="cecina ahumada yucas fritas">
+            <img src="img/CECINA%20AHUMADA%20CON%20YUCAS%20FRITAS.png" alt="Cecina ahumada servida con yucas fritas" loading="lazy" width="640" height="640"><div class="product-info"><span class="product-category">Desayunos típicos</span><h2>Cecina Ahumada con Yucas Fritas</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="cecina-yucas" data-name="Cecina Ahumada con Yucas Fritas">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-tipicos" data-name="chicharrones yuca frita">
+            <img src="img/CHICHARRONES%20CON%20YUCA%20FRITA.png" alt="Chicharrones acompañados con yuca frita" loading="lazy" width="640" height="640"><div class="product-info"><span class="product-category">Desayunos típicos</span><h2>Chicharrones con Yuca Frita</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="chicharrones-yuca" data-name="Chicharrones con Yuca Frita">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-tipicos" data-name="triple star chorizo ahumado chicharrones cecina yuca frita patacones ensalada">
+            <img src="img/TRIPLE%20STAR.png" alt="Desayuno Triple Star con chorizo, chicharrones, cecina, yuca, patacones y ensalada" loading="lazy" width="640" height="640"><div class="product-info"><span class="product-category">Desayunos típicos</span><h2>Triple Star</h2><p>Chorizo ahumado, chicharrones, cecina, yuca frita, patacones y ensalada.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="triple-star" data-name="Triple Star">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-tipicos" data-name="duo dúo star cecina ahumada chorizo yucas fritas">
+            <img src="img/D%C3%9AO%20STAR.png" alt="Plato Dúo Star con cecina, chorizo y yucas fritas" loading="lazy" width="640" height="640"><div class="product-info"><span class="product-category">Desayunos típicos</span><h2>Dúo Star</h2><p>Cecina ahumada, chorizo y yucas fritas.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="duo-star" data-name="Dúo Star">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-especiales" data-name="desayuno clasico chorizo ahumado huevos revueltos tostadas cafe jugo">
+            <img src="img/DESAYUNO%20CL%C3%81SICO.png" alt="Desayuno clásico con chorizo, huevos revueltos, tostadas, café y jugo" loading="lazy"><div class="product-info"><span class="product-category">Desayunos especiales</span><h2>Desayuno Clásico</h2><p>Chorizo ahumado, huevos revueltos, tostadas, café y jugo.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="desayuno-clasico" data-name="Desayuno Clásico">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-especiales" data-name="desayuno regional huevos revueltos cecina chorizo platanos fritos tostadas jugo cafe">
+            <img src="img/DESAYUNO%20REGIONAL.png" alt="Desayuno regional con huevos, cecina, chorizo, plátanos, tostadas, jugo y café" loading="lazy"><div class="product-info"><span class="product-category">Desayunos especiales</span><h2>Desayuno Regional</h2><p>Huevos revueltos con cecina y chorizo, plátanos fritos, tostadas, jugo y café.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="desayuno-regional" data-name="Desayuno Regional">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-especiales" data-name="desayuno cafetalero chorizo ahumado huevo yuca frita cafe">
+            <img src="img/DESAYUNO%20CAFETALERO.png" alt="Desayuno cafetalero con chorizo, huevo, yuca frita y café" loading="lazy"><div class="product-info"><span class="product-category">Desayunos especiales</span><h2>Desayuno Cafetalero</h2><p>Chorizo ahumado, huevo, yuca frita y café.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="desayuno-cafetalero" data-name="Desayuno Cafetalero">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-especiales" data-name="desayuno fit huevos revueltos palta waffles avena cafe jugo">
+            <img src="img/DESAYUNO%20FIT.png" alt="Desayuno fit con huevos revueltos, palta, waffles de avena, café y jugo" loading="lazy"><div class="product-info"><span class="product-category">Desayunos especiales</span><h2>Desayuno Fit</h2><p>Huevos revueltos, palta, waffles de avena, café y jugo.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="desayuno-fit" data-name="Desayuno Fit">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="desayunos-especiales" data-name="desayuno palteado huevos revueltos tostadas palta cafe jugo">
+            <img src="img/DESAYUNO%20PALTEADO.png" alt="Desayuno palteado con huevos revueltos, tostadas, palta, café y jugo" loading="lazy"><div class="product-info"><span class="product-category">Desayunos especiales</span><h2>Desayuno Palteado</h2><p>Huevos revueltos, tostadas, palta, café y jugo.</p><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="desayuno-palteado" data-name="Desayuno Palteado">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="para-picar" data-name="tostones guacamole">
+            <img src="img/TOSTONES%20CON%20GUACAMOLE.png" alt="Tostones servidos con guacamole" loading="lazy"><div class="product-info"><span class="product-category">Especiales para picar</span><h2>Tostones con Guacamole</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="tostones-guacamole" data-name="Tostones con Guacamole">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="para-picar" data-name="pizza chorizo ahumado cecina">
+            <img src="img/PIZZA%20DE%20CHORIZO%20AHUMADO%20Y%20CECINA.png" alt="Pizza de chorizo ahumado y cecina" loading="lazy"><div class="product-info"><span class="product-category">Especiales para picar</span><h2>Pizza de Chorizo Ahumado y Cecina</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="pizza-chorizo-cecina" data-name="Pizza de Chorizo Ahumado y Cecina">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="para-picar" data-name="causa de miercoles miércoles">
+            <img src="img/CAUSA%20DE%20MI%C3%89RCOLES.png" alt="Porción de causa de miércoles" loading="lazy"><div class="product-info"><span class="product-category">Especiales para picar</span><h2>Causa de Miércoles</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="causa-miercoles" data-name="Causa de Miércoles">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="para-picar" data-name="canastitas platano guacamole">
+            <img src="img/CANATITAS%20DE%20PL%C3%81TANO%20CON%20GUACAMOLE.png" alt="Canastitas de plátano con guacamole" loading="lazy"><div class="product-info"><span class="product-category">Especiales para picar</span><h2>Canastitas de Plátano con Guacamole</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="canastitas-platano-guacamole" data-name="Canastitas de Plátano con Guacamole">Añadir</button></div></div>
+          </article>
+          <article class="product-card" data-category="para-picar" data-name="empanadas carne">
+            <img src="img/EMPANADAS%20DE%20CARNE.png" alt="Empanada de carne recién horneada" loading="lazy"><div class="product-info"><span class="product-category">Especiales para picar</span><h2>Empanadas de Carne</h2><div class="product-buy"><strong class="price">Consultar</strong><button class="btn add-to-cart" type="button" data-id="empanadas-carne" data-name="Empanadas de Carne">Añadir</button></div></div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No encontramos productos con esa búsqueda. Prueba otra palabra o categoría.</p>
+        <p class="menu-disclaimer">Las imágenes y los precios se agregarán próximamente. Consulta la disponibilidad al hacer tu pedido.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <section class="footer-column footer-brand" aria-labelledby="footer-brand-title">
+        <a class="marca" href="index.html"><img src="img/logo-header.png" alt="Logotipo de StarCafé"><span id="footer-brand-title">StarCafé | Cafetería</span></a>
+        <p>Un lugar donde el café sabe a infancia, los postres cuentan historias, y hasta los frappés tienen corazón.</p>
+        <h2 class="footer-heading">Síguenos</h2>
+        <div class="social-icons" aria-label="Redes sociales">
+          <span class="social-icon" role="img" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3h-3.1V8.1c0-.9.3-1.5 1.6-1.5h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V10H7.3v3h2.8v8z"/></svg></span>
+          <span class="social-icon" role="img" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="social-dot" cx="17.7" cy="6.8" r="1"/></svg></span>
+          <span class="social-icon" role="img" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.7 12 4.7 12 4.7s-5.9 0-7.6.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.5 7.6.5 7.6.5s5.9 0 7.6-.5a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8Z"/><path class="social-play" d="m10 15.5 5.2-3.5L10 8.5z"/></svg></span>
+          <span class="social-icon" role="img" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 3h-3.2v12.2a2.7 2.7 0 1 1-2.3-2.7v-3.3a6 6 0 1 0 5.5 6V9a8.4 8.4 0 0 0 4.5 1.3V7a5.1 5.1 0 0 1-4.5-4Z"/></svg></span>
+        </div>
+      </section>
+      <section class="footer-column" aria-labelledby="footer-contact-title">
+        <h2 class="footer-heading" id="footer-contact-title">Contáctanos</h2>
+        <address class="footer-contact">
+          <p>Av. Leopoldo Krausse #303<br>Villa Rica - Oxapampa - Perú</p>
+          <p><strong>Lunes a sábado:</strong><br>8:15 a. m. - 12 p. m. y 5:30 p. m. - 9:30 p. m.</p>
+          <p><strong>Domingos:</strong><br>5:30 p. m. - 9:30 p. m.</p>
+          <p><a href="mailto:starcafe.villarica@gmail.com">starcafe.villarica@gmail.com</a></p>
+          <p><a href="tel:+51985645293">985 645 293</a></p>
+        </address>
+      </section>
+      <section class="footer-column" aria-labelledby="footer-blog-title">
+        <h2 class="footer-heading" id="footer-blog-title">Blogs recientes</h2>
+        <a class="footer-blog-link" href="https://starcafevr.com/lo-mejor-del-cafe-peruano-en-starcafe-de-villa-rica" target="_blank" rel="noopener noreferrer">Lo Mejor del Café Peruano en Starcafé de Villa Rica <span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
+    <section class="footer-map wrap" aria-labelledby="footer-map-title">
+      <div class="footer-map-heading"><h2 class="footer-heading" id="footer-map-title">Encuéntranos en Villa Rica</h2><a href="https://www.google.com/maps/place/StarCaf%C3%A9/@-10.7353362,-75.2672319,835m/data=!3m2!1e3!4b1!4m6!3m5!1s0x910996bf19591a33:0x81c6a34500e7f23d!8m2!3d-10.7353362!4d-75.2672319!16s%2Fg%2F11g9ng7_k8?entry=ttu&amp;g_ep=EgoyMDI2MTEwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a></div>
+      <iframe class="footer-map-frame" title="Ubicación de StarCafé en Villa Rica, Perú" src="https://maps.google.com/maps?q=-10.7353362,-75.2672319&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </section>
+    <div class="footer-bottom"><div class="wrap"><p>© 2026 StarCafé | Cafetería. El sabor de Villa Rica, Pasco · Perú.</p><p>Esta página web ha sido diseñada y creada por <a href="https://byflorr.com/" target="_blank" rel="noopener noreferrer"><strong>FlorR</strong></a>.</p></div></div>
+  </footer>
+  <button class="cart-fab" type="button" id="open-cart" aria-haspopup="dialog"><span aria-hidden="true">🛒</span> Mi pedido <span class="cart-count" id="cart-count">0</span></button>
+  <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+  <aside class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-heading"><div><span class="eyebrow">Tu selección</span><h2 id="cart-title">Mi pedido</h2></div><button class="cart-close" type="button" id="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <p class="cart-empty" id="cart-empty">Aún no agregas productos.<br>¡Explora el menú y elige tus favoritos!</p>
+    <div class="cart-summary"><p><span>Subtotal</span><strong id="cart-subtotal">S/ 0.00</strong></p><button class="btn cart-checkout" type="button" id="checkout" disabled>Enviar pedido por WhatsApp</button></div>
+  </aside>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
